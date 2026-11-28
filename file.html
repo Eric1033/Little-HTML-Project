@@ -38,6 +38,8 @@
     <p><b>bold text</b></p>
     <p><em>emphasis text</em></p>
 
+    <p>block elements</p> <p>always create new lines</p>
+
     <h3>Tables are fucking confusing!</h3>
     <table bgcolor="black">
         <tr bgcolor="white">
@@ -57,7 +59,16 @@
 
         </tr>
     </table>
-    
+    <hr>
+    <br>
+    <button style="background-color:rgb(3, 0, 200); color:white", onclick="changeText()"> change the text of the below text </button>
+    <p id="label">text</p>
+
+    <script>
+        function changeText(){
+            document.getElementById("label").innerHTML = "you have changed the text"
+        }
+    </script>
 </body>
 
 </html>
